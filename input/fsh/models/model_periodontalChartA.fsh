@@ -18,19 +18,24 @@ Description: "牙醫－牙周病檢查記錄表－版本 A (TW Dental Periodonta
 * preExam.dentistName 1..1 HumanName "術前醫師姓名" "術前檢查醫師姓名"
 * preExam.teeth 0..* BackboneElement "術前每顆牙齒的檢查記錄" "術前每顆牙齒的檢查記錄"
 * preExam.teeth.tooth 1..1 string "牙位" "牙位"
-* preExam.teeth.mobility 0..1 string "搖動度[應填入 1、2、3、D]" "牙齒搖動度（1: 已會搖, 2: 頰舌側水平方向搖動＜1mm, 3: 頰舌側水平方向搖動≧1mm, D: 垂直方向可下壓）"
+* preExam.teeth.mobility 0..1 code "搖動度[應填入 1、2、3、D]" "牙齒搖動度（1: 已會搖, 2: 頰舌側水平方向搖動＜1mm, 3: 頰舌側水平方向搖動≧1mm, D: 垂直方向可下壓）"
+* preExam.teeth.mobility from VSToothMobility (required)
 * preExam.teeth.furcation 0..* BackboneElement "根岔病變" "水平根岔病變（以mm計）"
-* preExam.teeth.furcation.position 1..1 string "位置" "根岔病變位置"
+* preExam.teeth.furcation.position 1..1 code "位置" "根岔病變位置" 
+* preExam.teeth.furcation.position from VSFurcationSite (required)
 * preExam.teeth.furcation.depth 1..1 decimal "深度" "根岔病變深度"
 * preExam.teeth.probing 0..* BackboneElement "牙周探測深度" "牙周探測深度"
 * preExam.teeth.probing.buccal 0..* BackboneElement "頰側探測深度" "頰側牙周探測深度"
-* preExam.teeth.probing.buccal.position 1..1 string "位置" "頰側探測深度位置"
+* preExam.teeth.probing.buccal.position 1..1 code "位置" "頰側探測深度位置"
+* preExam.teeth.probing.buccal.position from VSProbingPosition (required)
 * preExam.teeth.probing.buccal.depth 1..1 decimal "深度" "頰側探測深度深度"
 * preExam.teeth.probing.palatal 0..* BackboneElement "腭側探測深度" "腭側牙周探測深度"
-* preExam.teeth.probing.palatal.position 1..1 string "位置" "腭側探測深度位置"
+* preExam.teeth.probing.palatal.position 1..1 code "位置" "腭側探測深度位置"
+* preExam.teeth.probing.palatal.position from VSProbingPosition (required)
 * preExam.teeth.probing.palatal.depth 1..1 decimal "深度" "腭側探測深度深度"
 * preExam.teeth.probing.lingual 0..* BackboneElement "舌側探測深度" "舌側牙周探測深度"
-* preExam.teeth.probing.lingual.position 1..1 string "位置" "舌側探測深度位置"
+* preExam.teeth.probing.lingual.position 1..1 code "位置" "舌側探測深度位置"
+* preExam.teeth.probing.lingual.position from VSProbingPosition (required)
 * preExam.teeth.probing.lingual.depth 1..1 decimal "深度" "舌側探測深度深度"
 * preExam.teeth.note 0..1 string "備註" "檢查備註"
 
@@ -41,19 +46,24 @@ Description: "牙醫－牙周病檢查記錄表－版本 A (TW Dental Periodonta
 * postExam.dentistName 1..1 HumanName "術後醫師姓名" "術後檢查醫師姓名"
 * postExam.teeth 0..* BackboneElement "術後每顆牙齒的檢查記錄" "術後每顆牙齒的檢查記錄"
 * postExam.teeth.tooth 1..1 string "牙位" "牙位"
-* postExam.teeth.mobility 0..1 string "搖動度[應填入 1、2、3、D]" "牙齒搖動度（1: 已會搖, 2: 頰舌側水平方向搖動＜1mm, 3: 頰舌側水平方向搖動≧1mm, D: 垂直方向可下壓）"
+* postExam.teeth.mobility 0..1 code "搖動度[應填入 1、2、3、D]" "牙齒搖動度（1: 已會搖, 2: 頰舌側水平方向搖動＜1mm, 3: 頰舌側水平方向搖動≧1mm, D: 垂直方向可下壓）"
+* postExam.teeth.mobility from VSToothMobility (required)
 * postExam.teeth.furcation 0..* BackboneElement "根岔病變" "水平根岔病變（以mm計）"
-* postExam.teeth.furcation.position 1..1 string "位置" "根岔病變位置"
+* postExam.teeth.furcation.position 1..1 code "位置" "根岔病變位置" 
+* postExam.teeth.furcation.position from VSFurcationSite (required)
 * postExam.teeth.furcation.depth 1..1 decimal "深度" "根岔病變深度"
 * postExam.teeth.probing 0..* BackboneElement "牙周探測深度" "牙周探測深度"
 * postExam.teeth.probing.buccal 0..* BackboneElement "頰側探測深度" "頰側牙周探測深度"
-* postExam.teeth.probing.buccal.position 1..1 string "位置" "頰側探測深度位置"
+* postExam.teeth.probing.buccal.position 1..1 code "位置" "頰側探測深度位置"
+* postExam.teeth.probing.buccal.position from VSProbingPosition (required)
 * postExam.teeth.probing.buccal.depth 1..1 decimal "深度" "頰側探測深度深度"
 * postExam.teeth.probing.palatal 0..* BackboneElement "腭側探測深度" "腭側牙周探測深度"
-* postExam.teeth.probing.palatal.position 1..1 string "位置" "腭側探測深度位置"
+* postExam.teeth.probing.palatal.position 1..1 code "位置" "腭側探測深度位置"
+* postExam.teeth.probing.palatal.position from VSProbingPosition (required)
 * postExam.teeth.probing.palatal.depth 1..1 decimal "深度" "腭側探測深度深度"
 * postExam.teeth.probing.lingual 0..* BackboneElement "舌側探測深度" "舌側牙周探測深度"
-* postExam.teeth.probing.lingual.position 1..1 string "位置" "舌側探測深度位置"
+* postExam.teeth.probing.lingual.position 1..1 code "位置" "舌側探測深度位置"
+* postExam.teeth.probing.lingual.position from VSProbingPosition (required)
 * postExam.teeth.probing.lingual.depth 1..1 decimal "深度" "舌側探測深度深度"
 * postExam.teeth.note 0..1 string "備註" "檢查備註"
 
