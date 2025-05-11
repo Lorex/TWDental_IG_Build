@@ -20,13 +20,13 @@ Description: "牙醫－牙菌斑控制記錄表（Plaque Control Record）之邏
 * examRecords.teeth.tooth 1..1 string "牙位" "牙位編號"
 * examRecords.teeth.buccal 0..1 BackboneElement "頰側" "頰側牙菌斑指數"
 * examRecords.teeth.buccal.position 1..1 code "位置" "頰側牙菌斑指數位置"
-* examRecords.teeth.buccal.score 1..1 decimal "分數" "頰側牙菌斑指數分數"
+* examRecords.teeth.buccal.score 1..1 decimal "註記" "頰側牙菌斑指數註記"
 * examRecords.teeth.palatal 0..1 BackboneElement "腭側" "腭側牙菌斑指數"
 * examRecords.teeth.palatal.position 1..1 code "位置" "腭側牙菌斑指數位置"
-* examRecords.teeth.palatal.score 1..1 decimal "分數" "腭側牙菌斑指數分數"
+* examRecords.teeth.palatal.score 1..1 decimal "註記" "腭側牙菌斑指數註記"
 * examRecords.teeth.lingual 0..1 BackboneElement "舌側" "舌側牙菌斑指數"
 * examRecords.teeth.lingual.position 1..1 code "位置" "舌側牙菌斑指數位置"
-* examRecords.teeth.lingual.score 1..1 decimal "分數" "舌側牙菌斑指數分數"
+* examRecords.teeth.lingual.score 1..1 decimal "註記" "舌側牙菌斑指數註記"
 * examRecords.plaqueScore 1..1 decimal "牙菌斑指數" "整體牙菌斑指數百分比"
 
 Mapping: TWDentalPlaqueControlRecord

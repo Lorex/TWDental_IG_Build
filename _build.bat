@@ -143,9 +143,9 @@ GOTO end
         rmdir /s /q ".\temp"
         echo Removed: .\temp
     )
-    if exist ".\docs\" (
-        rmdir /s /q ".\docs"
-        echo Removed: .\docs
+    if exist ".\output\" (
+        rmdir /s /q ".\output"
+        echo Removed: .\output
     )
     if exist ".\template\" (
         rmdir /s /q ".\template"
