@@ -67,4 +67,4 @@ Description: "此範例展示如何使用 DentalPatient Profile 來呈現牙醫�
 * address.text = "台北市信義區信義路五段7號"
 * maritalStatus = http://terminology.hl7.org/CodeSystem/v3-MaritalStatus#M "已婚"
 * communication[0].language = urn:ietf:bcp:47#zh-TW "繁體中文"
-* managingOrganization = Reference(Organization-example) 
+* managingOrganization = Reference(Dental-organization-example) 
