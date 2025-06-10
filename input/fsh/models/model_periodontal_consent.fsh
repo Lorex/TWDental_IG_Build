@@ -43,3 +43,15 @@ Description: "此模型說明本 IG 如何定義病人基本資料暨接受牙�
 * consentSignature 1..1 Signature "立同意書人簽名" "立同意書人簽名。"
 * consentRelation 0..1 string "與病人之關係" "立同意書人與病人之關係。"
 * consentDate 1..1 date "同意日期" "同意書簽署日期。" 
+Instance: PeriodontalConsent-example
+InstanceOf: TWDentalPeriodontalConsentModel
+Usage: #example
+* patientName.text = "王小明"
+* medicalRecordNumber.value = "MR-001"
+* medicalHistory[0].text = "高血壓"
+* smoking.present = true
+* dentistSignature.who = Reference(Dental-practitioner-example)
+* consentSignature.who = Reference(Dental-patient-example)
+* consentDate = "2024-01-01"
+* doctorStatements[0] = "醫師已提供充分說明"
+* patientStatements[0] = "我同意接受治療"

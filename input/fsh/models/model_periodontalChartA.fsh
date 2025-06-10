@@ -134,3 +134,14 @@ Target: "https://dental-ig.fhir.tw"
 * stats.preDeepPocketTeeth -> "MeasureReport.group.population[deep-pocket].count"
 * stats.postImprovedTeeth -> "MeasureReport.group.population[improved].count"
 * stats.improvementRate -> "MeasureReport.group.population[improvement-rate].count"
+Instance: PeriodontalChartA-example
+InstanceOf: TWDentalPeriodontalChartModelA
+Usage: #example
+* patientInformation.name.text = "王小明"
+* patientInformation.personalIDNumber = "A123456789"
+* patientInformation.gender = "M"
+* patientInformation.birthDate = "1980-01-01"
+* preExam.date = "2024-01-01T09:00:00+08:00"
+* preExam.dentistName.text = "林牙醫"
+* stats.preTotalTeeth = 28
+* stats.preDeepPocketTeeth = 5

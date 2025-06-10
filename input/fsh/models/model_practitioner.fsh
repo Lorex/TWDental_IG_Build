@@ -28,3 +28,13 @@ Target: "https://dental-ig.fhir.tw"
 * gender -> "醫事人員的性別: DentalPractitioner.gender"
 * birthDate -> "醫事人員的出生日期: DentalPractitioner.birthDate"
 * photo -> "醫事人員的影像: DentalPractitioner.photo"
+Instance: DentalPractitionerModel-example
+InstanceOf: TWDentalPractitionerModel
+Usage: #example
+* identifier[0].value = "D001"
+* active = true
+* name[0].text = "吳大文"
+* telecom[0].system = #phone
+* telecom[0].value = "02-98765432"
+* gender = #male
+* birthDate = "1975-10-10"

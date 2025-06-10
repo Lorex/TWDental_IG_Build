@@ -38,3 +38,13 @@ Target: "https://dental-ig.fhir.tw"
 * contact.name -> "聯絡窗口負責人姓名: DentalOrganization.contact.name"
 * contact.telecom -> "聯絡窗口的聯絡方式: DentalOrganization.contact.telecom"
 * contact.address -> "聯絡窗口的地址: DentalOrganization.contact.address"
+Instance: DentalOrganizationModel-example
+InstanceOf: TWDentalOrganizationModel
+Usage: #example
+* identifier[0].value = "ORG-001"
+* active = true
+* organizationType.text = "牙醫診所"
+* name = "幸福牙醫診所"
+* telecom[0].system = #phone
+* telecom[0].value = "02-12345678"
+* address[0].text = "台北市信義區信義路五段7號"
