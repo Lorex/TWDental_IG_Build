@@ -12,3 +12,4 @@ Alias: $TWCoreBundle = https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/
 Alias: $TWCoreBundleDocument = https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/Bundle-document-twcore
 Alias: $TWCoreComposition = https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/Composition-twcore
 Alias: $TWCorePractitioner = https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/Practitioner-twcore
+Alias: $TWCoreLocation = https://twcore.mohw.gov.tw/ig/twcore/StructureDefinition/Location-twcore
