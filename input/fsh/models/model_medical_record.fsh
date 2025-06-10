@@ -29,3 +29,13 @@ Target: "https://dental-ig.fhir.tw"
 * medicalOrder -> "醫令: DentalMedicalRecord.medicalOrder"
 * doctorSignature -> "醫師簽章: DentalMedicalRecord.doctorSignature"
 * note -> "備註: DentalMedicalRecord.note" 
+Instance: DentalMedicalRecord-example
+InstanceOf: TWDentalMedicalRecordModel
+Usage: #example
+* patientName.text = "王小明"
+* medicalRecordNumber.value = "MR-001"
+* recordDate = "2024-01-01T10:00:00+08:00"
+* nhisNumber.value = "NHIS123456"
+* treatmentSite[0].text = "左上第一大臼齒"
+* treatment[0].text = "拔牙"
+* doctorSignature.who = Reference(Dental-practitioner-example)

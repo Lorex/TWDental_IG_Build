@@ -54,3 +54,13 @@ Target: "https://dental-ig.fhir.tw"
 * examRecords.teeth.palatal -> "Observation.component[palatal].valueQuantity"
 * examRecords.teeth.lingual -> "Observation.component[lingual].valueQuantity"
 * examRecords.plaqueScore -> "Observation.valueQuantity"
+Instance: PlaqueControlRecord-example
+InstanceOf: PlaqueControlRecordModel
+Usage: #example
+* patientInformation.name.text = "王小明"
+* patientInformation.personalIDNumber = "A123456789"
+* patientInformation.gender = "M"
+* patientInformation.birthDate = "1980-01-01"
+* examRecords[0].date = "2024-01-01T09:00:00+08:00"
+* examRecords[0].dentistName.text = "林牙醫"
+* examRecords[0].plaqueScore = 20

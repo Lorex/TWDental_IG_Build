@@ -42,3 +42,16 @@ Target: "https://dental-ig.fhir.tw"
 * contact.telecom -> "緊急聯絡人的聯絡方式: DentalPatient.contact.telecom"
 * communicationLanguage -> "病人的溝通語言: DentalPatient.communication.language"
 * organization -> "此紀錄的保管機構: DentalPatient.managingOrganization"
+Instance: DentalPatientModel-example
+InstanceOf: TWDentalPatientModel
+Usage: #example
+* identifier[0].value = "P001"
+* active = true
+* name[0].text = "王小明"
+* telecom[0].system = #phone
+* telecom[0].value = "0912345678"
+* gender = #male
+* birthDate = "1980-01-01"
+* address[0].text = "台北市"
+* maritalStatus.text = "已婚"
+* organization = Reference(Dental-organization-example)
